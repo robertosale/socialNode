@@ -19,8 +19,8 @@ var url = req.url;
     }) 
 
 
- }else if(url==='/about'){
-    fs.readFile('./about.html', function(error, resp){
+ }else if(url==='/settings'){
+    fs.readFile('./settings.html', function(error, resp){
         if(error) {
             res.writeHead(404, {'Content-Type': 'text/html'}); // http header
             res.write('<h1>Not Found</h1>'); //write a response
